@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 //-----------------------------------------condition for date-------------------------------------------
                 if(obj.date_validation(e3.getText().toString())==false)
                 {
-                    v3.setText("Invalid date");
+                    v3.setText("Invalid Date");
                     count=0;
                 }
                 else
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 //-------------------------------------------condition for Last name------------------------------------------
                 if(obj.Name_validation(e5.getText().toString())==false)
                 {
-                    v5.setText("Inavalid Name");
+                    v5.setText("Invalid Name");
                     count=0;
                 }
                 else

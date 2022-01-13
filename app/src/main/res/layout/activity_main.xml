@@ -21,32 +21,40 @@
 
 
 
+
+
+
+
     ]]>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#388E3C"
+        android:layout_width="299dp"
+        android:layout_height="51dp"
+        android:background="@color/design_default_color_secondary"
         android:backgroundTint="#AF3838"
         android:text="Submitted"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.582" />
 
     <EditText
         android:id="@+id/edittext2"
         android:layout_width="142dp"
         android:layout_height="50dp"
+        android:background="@drawable/custom_input"
         android:ems="10"
+        android:drawablePadding="3dp"
         android:hint="cvv"
+        android:drawableStart="@drawable/ic_card_cvv"
         android:inputType="number"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.239" />
@@ -55,12 +63,14 @@
         android:id="@+id/edittext5"
         android:layout_width="142dp"
         android:layout_height="50dp"
+        android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="Last Name"
         android:inputType="textPersonName"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.38" />
@@ -69,12 +79,15 @@
         android:id="@+id/edittext3"
         android:layout_width="142dp"
         android:layout_height="50dp"
+        android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="Date(MM/YY)"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
         android:inputType="text"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.239" />
@@ -83,12 +96,14 @@
         android:id="@+id/edittext4"
         android:layout_width="142dp"
         android:layout_height="50dp"
+        android:background="@drawable/custom_input"
         android:ems="10"
         android:hint="First Name"
         android:inputType="textPersonName"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.38" />
@@ -101,7 +116,7 @@
         android:textColor="#EF2222"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.301" />
@@ -113,7 +128,7 @@
         android:textColor="#EF2222"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.301" />
@@ -125,10 +140,10 @@
         android:textColor="#EF2222"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.177" />
+        app:layout_constraintVertical_bias="0.157" />
 
     <TextView
         android:id="@+id/textView4"
@@ -138,7 +153,7 @@
         android:textColor="#EF2222"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.437" />
@@ -151,19 +166,26 @@
         android:textColor="#EF2222"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.437" />
 
     <EditText
+
         android:id="@+id/editTextNumber"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="283dp"
-        android:layout_height="54dp"
+        android:layout_width="308dp"
+        android:layout_height="51dp"
+        android:drawablePadding="3dp"
+        android:background="@drawable/custom_input"
         android:ems="10"
+        android:textSize="16dp"
+        android:drawableStart="@drawable/card"
+        android:textColorHint="#808080"
         android:hint="Card Number"
         android:inputType="number"
+        android:padding="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

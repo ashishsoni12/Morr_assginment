@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ashish soni/AndroidStudioProjects/MyApplication6/app/src/main/res/drawable/card.xml" value="0.1" />
+        <entry key="..\:/Users/ashish soni/AndroidStudioProjects/MyApplication6/app/src/main/res/drawable/custom_input.xml" value="0.1" />
+        <entry key="..\:/Users/ashish soni/AndroidStudioProjects/MyApplication6/app/src/main/res/drawable/ic_card_cvv.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/ashish soni/AndroidStudioProjects/MyApplication6/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
       </map>
     </option>
