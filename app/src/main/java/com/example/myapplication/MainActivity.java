@@ -1,7 +1,9 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +16,7 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
     EditText e1,e2,e3,e4,e5;
     TextView v1,v2,v3,v4,v5;
+    int count=0;
 
     Button b1;
     Validation obj=new Validation();
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         v4=(TextView)findViewById(R.id.textView4);
         v5=(TextView)findViewById(R.id.textView5);
         b1=(Button)findViewById(R.id.button);
+                                    //For checking all condition is true or not
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,51 +48,77 @@ public class MainActivity extends AppCompatActivity {
                     if(obj.type_validation(e1.getText().toString())==false)
                     {
                         v1.setText("Invalid Creditcard Number");
+                        count=1;
                     }
                     else
                     {
                         v1.setText("");
+                        count=0;
                     }
                 }
                 else
                 {
                     v1.setText("Invalid Creditcard Number");
+                    count=1;
                 }
                 //---------------------------------------Condition for cvv-------------------------------------------
                 if(obj.cvv_validation(e2.getText().toString())==false)
                 {
                     v2.setText("Invalid cvv ");
+                    count=1;
                 }
                 else
                 {
                     v2.setText("");
+                    count=0;
                 }
                 //-----------------------------------------condition for date-------------------------------------------
                 if(obj.date_validation(e3.getText().toString())==false)
                 {
                     v3.setText("Invalid date");
+                    count=1;
                 }
                 else
                 {
                     v3.setText("");
+                    count=0;
                 }
                 //------------------------------------------condition for first name----------------------------------------
                 if(obj.Name_validation(e4.getText().toString())==false)
                 {
                     v4.setText("Invalid Name");
+                    count=1;
                 }
                 else
                 {
                     v4.setText("");
+                    count=0;
                 }
                 //-------------------------------------------condition for Last name------------------------------------------
                 if(obj.Name_validation(e5.getText().toString())==false)
                 {
                     v5.setText("Inavalid Name");
+                    count=1;
                 }
                 else
                 {
                     v5.setText("");
+                    count=0;
+                }
+                //----------------------------------------------------condition for successful emplementation of condetials-------------------
+                if(count==0)
+                {
+
+                    AlertDialog dlg=new AlertDialog.Builder(MainActivity.this)
+                            .setMessage("Payment Successful")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.dismiss();
+                                }
+                            })
+                            .create();
+                    dlg.show();
                 }
 
 
